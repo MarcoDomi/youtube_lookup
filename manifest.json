@@ -1,6 +1,6 @@
 {
     "manifest_version": 3,
-    "name": "Youtube Quick Lookup",
+    "name": "Youtube look up",
     "version": "1.0",
     "action":{
         "default_title": "Searches highlighted text in Youtube."
@@ -12,5 +12,4 @@
     "background":{
         "service_worker": "background.js"
     }
-
 }
