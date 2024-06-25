@@ -1,0 +1,16 @@
+{
+    "manifest_version": 3,
+    "name": "Youtube Quick Lookup",
+    "version": "1.0",
+    "action":{
+        "default_title": "Searches highlighted text in Youtube."
+    },
+    "permissions": ["contextMenus"],
+    "icons":{
+        "16": "images/youtube.png"
+    },
+    "background":{
+        "service_worker": "background.js"
+    }
+
+}
