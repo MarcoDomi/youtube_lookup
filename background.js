@@ -16,11 +16,11 @@ function onError(error) {
 
 chrome.contextMenus.onClicked.addListener((info, tab) => {
 
-    let selected_text = info.selectionText;
-    console.log(selected_text);
+    let encoded_text = encodeURIComponent(info.selectionText);
+    console.log(encoded_text);
 
     let new_tab = chrome.tabs.create({
-        url: `https://www.youtube.com/results?search_query=${selected_text}`,
+        url: `https://www.youtube.com/results?search_query=${encoded_text}`,
         active: false
     });
     new_tab.then(onCreated, onError);
